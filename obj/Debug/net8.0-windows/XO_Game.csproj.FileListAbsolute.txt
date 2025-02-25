@@ -1,0 +1,16 @@
+C:\Users\lenovo\source\repos\XO_Game\bin\Debug\net8.0-windows\XO_Game.exe
+C:\Users\lenovo\source\repos\XO_Game\bin\Debug\net8.0-windows\XO_Game.deps.json
+C:\Users\lenovo\source\repos\XO_Game\bin\Debug\net8.0-windows\XO_Game.runtimeconfig.json
+C:\Users\lenovo\source\repos\XO_Game\bin\Debug\net8.0-windows\XO_Game.dll
+C:\Users\lenovo\source\repos\XO_Game\bin\Debug\net8.0-windows\XO_Game.pdb
+C:\Users\lenovo\source\repos\XO_Game\obj\Debug\net8.0-windows\XO_Game.Form1.resources
+C:\Users\lenovo\source\repos\XO_Game\obj\Debug\net8.0-windows\XO_Game.csproj.GenerateResource.cache
+C:\Users\lenovo\source\repos\XO_Game\obj\Debug\net8.0-windows\XO_Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\source\repos\XO_Game\obj\Debug\net8.0-windows\XO_Game.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\XO_Game\obj\Debug\net8.0-windows\XO_Game.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\XO_Game\obj\Debug\net8.0-windows\XO_Game.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\XO_Game\obj\Debug\net8.0-windows\XO_Game.dll
+C:\Users\lenovo\source\repos\XO_Game\obj\Debug\net8.0-windows\refint\XO_Game.dll
+C:\Users\lenovo\source\repos\XO_Game\obj\Debug\net8.0-windows\XO_Game.pdb
+C:\Users\lenovo\source\repos\XO_Game\obj\Debug\net8.0-windows\XO_Game.genruntimeconfig.cache
+C:\Users\lenovo\source\repos\XO_Game\obj\Debug\net8.0-windows\ref\XO_Game.dll
