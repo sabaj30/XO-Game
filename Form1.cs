@@ -30,9 +30,10 @@ namespace XO
             ResumeLayout(false);
 
         }
+
         private char turn = 'X';
         private Button[] buttons;
-  
+
         public Form1()
         {
             InitializeComponent();
@@ -62,8 +63,23 @@ namespace XO
             btn.Enabled = false;
             var isWin = CheckWin();
             if (isWin)
+            {
                 MessageBox.Show(btn.Text);
+                ResetGame();
+            }
+            
+              
 
+        }
+
+        private void ResetGame()
+        {
+            turn = 'X';
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].Text = (i + 1).ToString(); 
+                buttons[i].Enabled = true;
+            }
         }
 
         private void ChangeTurn()
