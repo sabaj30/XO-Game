@@ -1,5 +1,3 @@
-using System.Windows.Forms;
-
 namespace XO
 {
     public partial class Form1 : Form
@@ -33,6 +31,8 @@ namespace XO
 
         }
         private char turn = 'X';
+        private Button[] buttons;
+  
         public Form1()
         {
             InitializeComponent();
@@ -41,7 +41,7 @@ namespace XO
 
         public void CreateGameField()
         {
-            Button[] buttons = new Button[9];
+            buttons = new Button[9];
             for (int i = 0; i < 9; i++)
             {
                 buttons[i] = new Button();
@@ -60,6 +60,10 @@ namespace XO
             btn.Text = turn.ToString();
             ChangeTurn();
             btn.Enabled = false;
+            var isWin = CheckWin();
+            if (isWin)
+                MessageBox.Show(btn.Text);
+
         }
 
         private void ChangeTurn()
@@ -67,6 +71,52 @@ namespace XO
             _ = turn == 'X' ? turn = 'O' : turn = 'X';
         }
 
+        private bool CheckWin()
+        {
+            bool result = false;
+            if (buttons[0].Text == buttons[1].Text && buttons[0].Text == buttons[2].Text)
+            {
+                result = true;
+            }
+
+            if (buttons[3].Text == buttons[4].Text && buttons[3].Text == buttons[5].Text)
+            {
+                result = true;
+            }
+
+            if (buttons[6].Text == buttons[7].Text && buttons[6].Text == buttons[8].Text)
+            {
+                result = true;
+            }
+
+            if (buttons[0].Text == buttons[3].Text && buttons[0].Text == buttons[6].Text)
+            {
+                result = true;
+            }
+
+            if (buttons[1].Text == buttons[4].Text && buttons[1].Text == buttons[7].Text)
+            {
+                result = true;
+            }
+
+            if (buttons[2].Text == buttons[5].Text && buttons[2].Text == buttons[8].Text)
+            {
+                result = true;
+            }
+
+            if (buttons[0].Text == buttons[4].Text && buttons[0].Text == buttons[8].Text)
+            {
+                result = true;
+            }
+
+            if (buttons[2].Text == buttons[4].Text && buttons[2].Text == buttons[6].Text)
+            {
+                result = true;
+            }
+
+
+            return result;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
